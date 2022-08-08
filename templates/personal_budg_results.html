@@ -3,17 +3,19 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width">
-      <title>User Input</title>
+      <title>User Results</title>
    </head>
    <body>
-      <form>
-         <h2>Basic Income Information</h2>
-         <label>Annual Income: <input type="text" name="ann_income"/></label><br>
+         <h2>Basic Information</h2>
+         <ul>
+            <li><strong>Annual Income:</strong> {{ann_income}}</li>
+        </ul>
+
          <h2>Static Expenses (monthly)</h2>
-         <label>Rent/Mortgage: <input type="number" name="housing_cost"/></label><br>
-         <label>Car Payment: <input type="text" name="car_pay"/></label><br>
-         <label>Insurance: <input type="text" name="insur_pay"/></label><br>
-         <button>Submit</button>
-      </form>
+         <ul>
+            <li><strong>Rent/Mortgage:</strong> {{housing_cost}}</li>
+            <li><strong>Car Payment:</strong> {{car_pay}}</li>
+            <li><strong>Insurance:</strong> {{insur_pay}}</li>
+         </ul>
    </body>
 </html>

@@ -13,7 +13,7 @@ def budget_input_form():
    return render_template("personal_budg_form.html")
 
 @app.route('/results', methods=["POST"])
-def budget_input_form():
+def budget_input_results():
    ann_income = request.form['ann_income']
    housing_cost = request.form['housing_cost']
    car_pay = request.form['car_pay']
